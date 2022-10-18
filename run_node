@@ -7,7 +7,7 @@ sudo apt-get install --yes python3-pip libffi-dev
 python3 -m pip install --upgrade pip
 sudo python3 -m pip install docker-compose
 export GETH_DATADIR=/data/geth
-sudo mkdir -p $GETH_DATADIR
+sudo mkdir -p $GETH_DATADIR $GETH_DATADIR/prysm
 openssl rand -hex 32 | tr -d "\n" > "$GETH_DATADIR/jwt.hex"
 docker-compose up -d
 docker ps
