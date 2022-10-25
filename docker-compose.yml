@@ -63,7 +63,6 @@ services:
       - --accept-terms-of-use
       - --datadir=/data
       - --disable-monitoring
-      - --rpc-host=0.0.0.0
       - --execution-endpoint=http://geth:8551
       - --jwt-secret=/geth/jwt.hex
       - --rpc-host=0.0.0.0
